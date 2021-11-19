@@ -6,31 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Event day by country code</title>
 </head>
 <body>
     <div id = "app">
-  <div class ="holder headline">
-    POPULATION STATISCS
-  </div>
-  <div class ="holder zip">
-    <label for="zip">Enter Contry Name</label>
-    <input type="text" id="contry" placeholder="Enter Contry Name">
-  </div>
-  <div class ="holder fact">
-    <label for="know">Do You Know?</label>
-    <textarea class= "myInput" id="know" placeholder="Enter your hope here" rows="9" cols="50"></textarea>
-    <button id="generate" type = "submit"> Generate </button>
-  </div>
-  <div class ="holder entry">
-    <div class = "title">Most Recent Entry</div>
-   <div id = "entryHolder">
-    <div id = "date"></div> 
-   <div id = "temp"></div>
-   <div id = "content"></div>
-  </div>
-  </div>
-  </div>
+      <div class ="holder headline">
+        Event day by country code
+      </div>
+      <div class ="holderCountry">
+        <label for="country">Country code</label>
+        <input type="text" id="country" placeholder="Enter Contry code">
+        <label for="year">Enter a year </label>
+        <input type="text" id="year" placeholder="Enter a year">
+        <label for="day">Enter a day </label>
+        <input type="text" id="day" placeholder="Enter a day">
+        <label for="month">Enter a month </label>
+        <input type="text" id="month" placeholder="Enter a month">
+      </div>
+      <div class ="holderFact">
+        <label for="know">Writ your hope</label>
+        <textarea class= "myInput" id="hope" placeholder="Enter your hope here in this day" rows="9" cols="50"></textarea>
+        <button id="generate" type = "button"> Generate </button>
+      </div>
+      <div class ="holder entry">
+        <div class = "title">Most Recent Entry</div>
+      <div id = "entryHolder">
+        <div id = "date"></div> 
+        <div id = "temp"></div>
+        <div id = "content"></div>
+      </div>
+      </div>
+    </div>
 <script src="app.js" type="text/javascript"></script>
     
 </body>
